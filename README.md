@@ -1,8 +1,12 @@
-# Emotion Detector
+# Final Project
 
-## Final Project - Emotion Detector
+## Emotion Detector
 
 An AI-based web application that detects emotions from a given text using the Watson NLP Emotion Prediction service and provides the dominant emotion.
+
+## Project Name
+
+**Final Project**
 
 ## Project Objective
 
@@ -31,7 +35,7 @@ It also determines the dominant emotion in the given statement.
 ## Project Structure
 
 ```text
-emotion-detector/
+oaqjp-final-project-emb-ai/
 │
 ├── EmotionDetection/
 │   ├── __init__.py
@@ -44,66 +48,3 @@ emotion-detector/
 ├── server.py
 ├── README.md
 └── requirements.txt
-```
-
-## Features
-
-* Detects five emotions from text.
-* Identifies the dominant emotion.
-* Provides a Flask-based web interface.
-* Handles blank or invalid input.
-* Includes unit testing.
-* Supports static code analysis using Pylint.
-
-## Application Workflow
-
-1. The user enters a text statement.
-2. The Flask application receives the input.
-3. The emotion detector sends the text to the Watson NLP service.
-4. The service returns emotion scores.
-5. The application identifies the dominant emotion.
-6. The result is displayed to the user.
-
-## How to Run
-
-Install the required packages:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the Flask application:
-
-```bash
-python server.py
-```
-
-Open the application in a browser:
-
-```text
-http://127.0.0.1:5000
-```
-
-## Unit Testing
-
-Run the unit tests using:
-
-```bash
-python -m unittest discover -v
-```
-
-## Static Code Analysis
-
-Run Pylint using:
-
-```bash
-pylint server.py
-```
-
-## Error Handling
-
-The application handles invalid or blank input and returns an appropriate error message instead of processing an empty statement.
-
-## Final Project
-
-This project was developed as part of the IBM Skills Network Final Project - Emotion Detector.
