@@ -13,8 +13,8 @@ def home():
 def emotion_detector_route():
     text_to_analyze = request.args.get("textToAnalyze")
 
-    if not text_to_analyze:
-        return "Invalid input! Please enter a statement."
+    if not text_to_analyze or not text_to_analyze.strip():
+        return "Invalid input! Try again."
 
     result = emotion_detector(text_to_analyze)
 
